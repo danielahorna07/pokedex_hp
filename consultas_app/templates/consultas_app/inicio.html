@@ -1,0 +1,397 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <base target  = "_top">
+        <meta charset = "UTF-8">
+        <meta name    = "viewport"    content = "width = device-width, initial-scale = 1.0">
+        <meta name    = "author"      content = "Daniela Horna">
+        <meta name    = "description" content = "Pokedex">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'general/estilos.css' %}">
+
+    </head>
+
+    <body>
+
+        <div class = "fondo_imagen_inicio fila col-lg-12 col-md-12 col-sm-12 col-xs-12">     
+            <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 100px;padding: 0px;"></div>
+            <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                 style = "font-size:42px;color:white;text-align:center;font-family: 'Lato', sans-serif;text-shadow: 1px 1px 5px black;">
+              <b>Proyecto Pokedex</b>
+            </div>
+        
+            <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                 style = "font-size:30px;color:white;text-align:center;font-family: 'Lato', sans-serif;text-shadow: 1px 1px 5px black;">
+              <b> Toda la información de los pokemones, en un solo lugar </b>
+            </div>
+        
+          </div>
+        
+        
+          <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+               style = "background-color: rgb(2, 165, 166);height: 40px;font-size:16px;color:white;text-align:center;">
+            "Al que madruga Dios lo ayuda, o en este caso, consigue un Pokémon" Profesor Oak
+          </div>
+        
+        
+          <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 30px;padding: 0px;"></div>
+        
+          <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "color:#333333;font-size:28px;font-weight: normal;text-align:center;">
+            Secciones
+          </div>
+        
+          <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 30px;padding: 0px;"></div>
+        
+        
+        
+          <div class = "fila">
+            <div class="col-lg-1-5 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+        
+            <!-- 01. Módulo: Top 20 Pokemones-->
+            <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:12px;">
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px; height: 300px;">
+    
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:15px;height: 120px;background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');background-repeat: no-repeat;background-size: cover;background-position: center;">
+    
+    
+    
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style = "height: 32px;width: 32px;padding: 6px 0px 0px 0px;border-radius: 100%;background-color: #ee1515;text-align:center;font-size:14px;color:white;font-weight: bold;">
+                    1
+                </div>
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style="padding: 6px 0px 0px 20px;color:white;text-align:left;font-size:16px;font-weight: bold;text-overflow: ellipsis;font-family: 'Open Sans', sans-serif;">
+                    Top 20 Pokemones
+                </div>
+    
+    
+                
+                </div>
+    
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:0px;height: 220px;">
+    
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5" ></div>
+    
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div onclick="window.location.href = '/consultas/lista_50_pokemons/'" class = "opcion_titulo col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px 10px 0px 10px;">
+                    Top 20 Pokemones
+                    </div>
+                </div>
+    
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style="text-align:justify;font-size:14px;padding:10px;font-family: 'Open Sans', sans-serif;">
+                    Visualiza el ID, nombre, tipo, altura y peso de los primeros pokemones.
+                    </div>
+                </div>
+    
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                    <div class="col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px;">
+                        <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 8px 0px 0px 10px;">
+                            <button onclick="window.location.href = '/consultas/lista_50_pokemons/'" class="button_funcionalidades col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 4px 8px 6px 8px;">
+                                <b>Pokemones</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+    
+                    </div>
+    
+                </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+
+        <!-- 02. Módulo: Peso: [30 - 80]-->
+        <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:12px;">
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px; height: 300px;">
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:15px;height: 120px;background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');background-repeat: no-repeat;background-size: cover;background-position: center;">
+
+
+
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style = "height: 32px;width: 32px;padding: 6px 0px 0px 0px;border-radius: 100%;background-color: #eeca15;text-align:center;font-size:14px;color:white;font-weight: bold;">
+                    2
+                </div>
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style="padding: 6px 0px 0px 20px;color:white;text-align:left;font-size:16px;font-weight: bold;text-overflow: ellipsis;font-family: 'Open Sans', sans-serif;">
+                    Rango peso: 30 - 80
+                </div>
+
+
+                
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:0px;height: 220px;">
+
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5" ></div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div onclick="window.location.href = '/consultas/rango_peso/'" class = "opcion_titulo col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px 10px 0px 10px;">
+                    Rango peso: 30 - 80
+                    </div>
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style="text-align:justify;font-size:14px;padding:10px;font-family: 'Open Sans', sans-serif;">
+                    Visualiza el ID, nombre, tipo, altura y peso de los pokemones cuyo peso sea mayor o igual a 30 y menor o igual a 80 hectogramos.
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                    <div class="col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px;">
+                        <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 8px 0px 0px 10px;">
+                            <button onclick="window.location.href = '/consultas/rango_peso/'" class="button_funcionalidades col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 4px 8px 6px 8px;">
+                                <b>Rango Peso</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <!-- 03. Módulo: Tipo Grass -->
+
+        <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:12px;">
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px; height: 300px;">
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:15px;height: 120px;background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/4188296/pexels-photo-4188296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');background-repeat: no-repeat;background-size: cover;background-position: center;">
+
+
+
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style = "height: 32px;width: 32px;padding: 6px 0px 0px 0px;border-radius: 100%;background-color: #094998;text-align:center;font-size:14px;color:white;font-weight: bold;">
+                    3
+                </div>
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style="padding: 6px 0px 0px 20px;color:white;text-align:left;font-size:16px;font-weight: bold;text-overflow: ellipsis;font-family: 'Open Sans', sans-serif;">
+                    Tipo Grass
+                </div>
+
+
+                
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:0px;height: 220px;">
+
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5" ></div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div onclick="window.location.href = '/consultas/tipo_grass/'" class = "opcion_titulo col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px 10px 0px 10px;">
+                    Tipo Grass
+                    </div>
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style="text-align:justify;font-size:14px;padding:10px;font-family: 'Open Sans', sans-serif;">
+                    Visualiza el ID, nombre, tipo, altura y peso de los pokemones que sean del tipo grass.
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                    <div class="col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px;">
+                        <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 8px 0px 0px 10px;">
+                            <button onclick="window.location.href = '/consultas/tipo_grass/'" class="button_funcionalidades col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 4px 8px 6px 8px;">
+                                <b>Tipo Grass</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+        <!-- 04. Módulo: Tipo Flying y altura mayor a 10 -->
+        <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:12px;">
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px; height: 300px;">
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:15px;height: 120px;background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://media.vandal.net/i/1280x720/10-2023/17/202310171423122_3.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+
+
+
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style = "height: 32px;width: 32px;padding: 6px 0px 0px 0px;border-radius: 100%;background-color: #ee1515;text-align:center;font-size:14px;color:white;font-weight: bold;">
+                    3
+                </div>
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style="padding: 6px 0px 0px 20px;color:white;text-align:left;font-size:16px;font-weight: bold;text-overflow: ellipsis;font-family: 'Open Sans', sans-serif;">
+                    Tipo Flying y Altura mayor a 10
+                </div>
+
+
+                
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:0px;height: 220px;">
+
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5" ></div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div onclick="window.location.href = '/consultas/tipo_flying/'" class = "opcion_titulo col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px 10px 0px 10px;">
+                    Tipo Flying y Altura mayor a 10
+                    </div>
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style="text-align:justify;font-size:14px;padding:10px;font-family: 'Open Sans', sans-serif;">
+                    Visualiza el ID, nombre, tipo, altura y peso de los pokemones que sean del tipo flying y su altura es mayor a 10 decimetros.
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                    <div class="col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px;">
+                        <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 8px 0px 0px 10px;">
+                            <button onclick="window.location.href = '/consultas/tipo_flying/'" class="button_funcionalidades col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 4px 8px 6px 8px;">
+                                <b>Tipo y altura</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 05. Nombres invertidos-->
+        <div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding:12px;">
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px; height: 300px;">
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:15px;height: 120px;background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://cdn.alfabetajuega.com/alfabetajuega/2019/03/iniciales-1.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+
+
+
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style = "height: 32px;width: 32px;padding: 6px 0px 0px 0px;border-radius: 100%;background-color: #eeca15;text-align:center;font-size:14px;color:white;font-weight: bold;">
+                    5
+                </div>
+                <div class = "col-lg-aut col-md-aut col-sm-aut col-xs-aut"
+                        style="padding: 6px 0px 0px 20px;color:white;text-align:left;font-size:16px;font-weight: bold;text-overflow: ellipsis;font-family: 'Open Sans', sans-serif;">
+                    Nombres Invertidos
+                </div>
+
+
+                
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" 
+                    style = "border-radius: 4px 4px 0px 0px;padding:0px;height: 220px;">
+
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5" ></div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div onclick="window.location.href = '/consultas/nombres_invertidos/'" class = "opcion_titulo col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px 10px 0px 10px;">
+                    Nombres Invertidos
+                    </div>
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style="text-align:justify;font-size:14px;padding:10px;font-family: 'Open Sans', sans-serif;">
+                    Visualiza el ID, nombre, NOMBRE INVERTIDO, tipo, altura y peso de los pokemones.
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                    <div class="col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding: 0px;">
+                        <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 8px 0px 0px 10px;">
+                            <button onclick="window.location.href = '/consultas/nombres_invertidos/'" class="button_funcionalidades col-lg-aut col-md-aut col-sm-aut col-xs-aut" style="padding: 4px 8px 6px 8px;">
+                                <b>Nombres invertidos</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                    <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                    <div class = "col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+
+    
+    
+
+    </body>
+
+</html>

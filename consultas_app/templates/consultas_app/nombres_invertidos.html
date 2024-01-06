@@ -1,0 +1,206 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <base target  = "_top">
+        <meta charset = "UTF-8">
+        <meta name    = "viewport"    content = "width = device-width, initial-scale = 1.0">
+        <meta name    = "author"      content = "Daniela Horna">
+        <meta name    = "description" content = "Proyecto Pokedex">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'general/estilos.css' %}">
+
+    </head>
+
+    <body>
+
+        <div class="fila fijar_navegador col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding:0px;">
+
+      
+            <div class="navegador col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding:3px;">
+            
+              <div class="col-lg-1-5 col-md-0 col-sm-0 col-xs-0"></div>
+      
+              <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <ul class="col-lg-8-5 col-md-8-5 col-sm-8-5 col-xs-8-5" style = "float: left;padding: 0px;">
+      
+                  <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 0px">
+                    <a>
+                      <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style = "float: left;padding: 10px 5px 10px 6px;">
+                        <i class="tiny material-icons" style = "color:white;">apps</i>
+                      </div>
+
+                      <div class="col-lg-aut col-md-aut col-sm-aut col-xs-aut" style = "float: left;padding: 17px 15px 10px 15px;font-size:20px;color:#fefefe;font-weight: normal;">
+                        PROYECTO POKEDEX
+                      </div>
+                                          
+                    </a>
+
+                    <ul class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "float: left;padding: 0px;border-radius: 0px 0px 2px 2px;">
+      
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 28px;width: 100%;padding: 0px;"></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                      <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style = "padding: 0px;">
+      
+                        <button onclick="window.location.href = '/consultas/lista_50_pokemons/'"  class="button_navegador col-lg-aut col-md-aut col-sm-aut col-xs-aut" style = "margin: 0px 20px 0px 0px;">
+                          <i class="material-icons" style = "font-size:14px;padding: 10px 4px 10px 12px;">home</i>
+                          <b style = "padding: 10px 16px 10px 4px;">Inicio</b>
+                        </button>
+                        
+                      </div>
+      
+      
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height: 18px; width: 100%; padding: 0px;"></div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding: 0px;">
+                            <li class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 2px;">
+                                <a onclick="window.location.href = '/consultas/lista_50_pokemons/'" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="float: left; color: #ee1515; font-size:20px;">PROYECTO POKEDEX</a>
+                            </li>
+                        </div>
+      
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 10px;width: 100%;padding: 0px;"></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+      
+      
+      
+      
+      
+                      <div class="col-lg-3-5 col-md-3-5 col-sm-3-5 col-xs-3-5" style = "padding: 0px;">
+                        <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 2px;">
+                          <a onclick="window.location.href = '/consultas/lista_50_pokemons/'" 
+                             class = "menu_titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">Pokemons</a>
+                        </li>
+      
+                      </div>
+      
+      
+      
+      
+      
+                      <div class="col-lg-3-5 col-md-3-5 col-sm-3-5 col-xs-3-5" style = "padding: 0px;">
+                        <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 2px;">
+                          <a onclick="window.location.href = '/consultas/rango_peso/'"
+                             class = "menu_titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">Rango Peso</a>
+                        </li>
+                      </div>
+      
+      
+                      
+                      <div class="col-lg-3-5 col-md-3-5 col-sm-3-5 col-xs-3-5" style = "padding: 0px;">
+      
+                        <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 2px;">
+                          <a onclick="window.location.href = '/consultas/tipo_grass/'"
+                             class = "menu_titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">Tipo Grass</a>
+                        </li>
+      
+                      </div>
+      
+      
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 10px;width: 100%;padding: 0px;"></div>
+                      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+      
+                      <div class="col-lg-3-5 col-md-3-5 col-sm-3-5 col-xs-3-5" style = "padding: 0px;">
+                        <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 2px;">
+                          <a onclick="window.location.href = '/consultas/tipo_flying/'"
+                             class = "menu_titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">Tipo y Altura</a>
+                        </li>
+    
+      
+                      </div>
+      
+      
+      
+                      <div class="col-lg-3-5 col-md-3-5 col-sm-3-5 col-xs-3-5" style = "padding: 0px;">
+      
+                        <li class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 2px;">
+                          <a onclick="window.location.href = '/consultas/nombres_invertidos/'"
+                             class = "menu_titulo col-lg-12 col-md-12 col-sm-12 col-xs-12">Nombres invertidos</a>
+                        </li>
+      
+                      </div>
+      
+      
+      
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                    </ul>  
+                  </li>
+                  
+      
+                </ul>
+            </div>
+        </div>
+
+      </div>
+
+      <div class = "contenedor_principal fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 0px;" id = "contenedor_principal">
+
+        <div class = "fila">     
+            <div class="col-lg-1-5 col-md-0 col-sm-0 col-xs-0"></div>
+            <div class="fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding: 8px 10px 0px 30px;">
+                <a class = "ruta_button" href="/consultas/inicio/" >Inicio</a> 
+                <a class = "ruta_separacion">>></a>
+                <a class = "ruta_button" >Nombres Invertidos</a>
+            </div>
+        </div>
+
+        <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "height: 3px;padding: 0px;">     </div>
+
+        <div class = "fila">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding-top: 0px;">
+
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:12px;">
+
+
+            <div class = "recuadro_blanco col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0px;">
+                <div class = "col-lg-0-5 col-md-0-5 col-sm-0-5 col-xs-0-5"></div>
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:left;font-size:32px;color:#000000;font-weight: bold;">
+                    Nombres Invertidos
+                </div>
+                </div>
+
+                <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+
+                <div class="fila">
+
+                <!-- Encabezados de la tabla -->
+
+                <table>
+
+                    <tr>
+                        <th> ID </th>
+                        <th> Nombre </th>
+                        <th> Nombre invertido </th>
+                        <th> Tipo </th>
+                        <th> Altura </th>
+                        <th> Peso </th> 
+
+                    </tr>
+
+                    {% for pokemon in lista_nombres_invertidos %}
+                    <tr>
+                        <td> {{ pokemon.id }} </td>
+                        <td> {{ pokemon.nombre }} </td>
+                        <td> {{ pokemon.nombre_invertido }} </td>
+                        <td> {{ pokemon.tipo|join:", " }} </td>
+                        <td> {{ pokemon.altura }} </td>
+                        <td> {{ pokemon.peso }} </td> 
+                    </tr>
+                    {% endfor %}
+
+                </table>
+
+                <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                <div class = "fila col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+        
+            </div>
+
+    </body>
+
+</html>
